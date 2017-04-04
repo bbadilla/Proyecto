@@ -14,9 +14,9 @@ public class Tablero extends Actor
      * Act - do whatever the Tablero wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    GreenfootImage imagen;
-    int cont;
-    String mensaje;
+    private GreenfootImage imagen;
+    private int cont;
+    private String mensaje;
     
     public Tablero(int c,String msj)
     {
@@ -37,15 +37,15 @@ public class Tablero extends Actor
    
     public void incrementar()
    {   
-       cont++;
+       cont+=10;
        dibuja();
     }
    public void decrementar()
    {
-       cont--;
+       cont-=5;
        dibuja();
    }
-   public int obtenerValor()
+   public  int obtenerValor()
    {
        return cont;
    }
